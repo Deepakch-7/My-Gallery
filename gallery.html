@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Deepak's Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Deepak<span>.</span>Gallery</div>
+  <nav class="header-nav">
+    <a href="#gallery">Gallery</a>
+    <a href="#about">About</a>
+    <a href="../myProtfolio/portfolio.html">Portfolio</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero-band">
+  <h1>Visual <em>Stories</em></h1>
+  <p>A curated collection of moments, places, and creative works — crafted by Deepak Chelluboina.</p>
+</div>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-num" id="totalCount">20</div><div class="stat-label">Photos</div></div>
+  <div class="stat"><div class="stat-num">5</div><div class="stat-label">Categories</div></div>
+  <div class="stat"><div class="stat-num">2025</div><div class="stat-label">Year</div></div>
+</div>
+
+<!-- FILTERS -->
+<div class="filters-bar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="nature">🌿 Nature</button>
+  <button class="filter-btn" data-filter="travel">✈️ Travel</button>
+  <button class="filter-btn" data-filter="food">🍜 Food</button>
+  <button class="filter-btn" data-filter="urban">🏙 Urban</button>
+  <button class="filter-btn" data-filter="art">🎨 Art</button>
+</div>
+
+<!-- SEARCH -->
+<div class="search-wrap">
+  <div class="search-box">
+    <i class="fas fa-search"></i>
+    <input type="text" id="searchInput" placeholder="Search by title or category…" />
+  </div>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery-section" id="gallery">
+  <div class="gallery-grid" id="galleryGrid"></div>
+  <div class="empty-state" id="emptyState" style="display:none">
+    <i class="far fa-image"></i>
+    <p>No results found. Try a different filter.</p>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <button class="lb-nav lb-prev" id="lbPrev"><i class="fas fa-chevron-left"></i></button>
+  <div class="lightbox-inner">
+    <button class="lb-close" id="lbClose"><i class="fas fa-times"></i></button>
+    <div class="lb-img" id="lbImg"></div>
+    <div class="lb-info">
+      <h3 id="lbTitle"></h3>
+      <p id="lbDesc"></p>
+      <div class="lb-meta" id="lbMeta"></div>
+    </div>
+  </div>
+  <button class="lb-nav lb-next" id="lbNext"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<footer>
+  <p>© 2025 Deepak Chelluboina · Gallery · Hyderabad, Telangana</p>
+</footer>
+
+<script src="gallery.js"></script>
+
+</body>
+</html>
